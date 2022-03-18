@@ -1,0 +1,76 @@
+.todoItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 30px 15px 10px;
+    border-bottom: 1px solid hsla(0, 0%, 83%, 0.4);
+}
+.todoItemCheckbox {
+    font-weight: 300;
+    display: block;
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.todoItemCheckbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    margin-left: 10px;
+    background-color: transparent;
+    border-radius: 15px;
+    /* outline: 1px solid #eee; */
+}
+.checkmarkDark {
+    outline: 1px solid hsla(236, 33%, 92%, .3);
+}
+.todoItemCheckbox:hover input ~ .checkmark {
+    outline: 1px solid hsl(234, 39%, 85%);
+}
+.todoItemCheckbox input:checked ~ .checkmark {
+    background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.todoItemText {
+    text-decoration: line-through;
+}
+.todoItemCheckbox input:checked ~ .checkmark:after {
+    display: block;
+}
+.todoItemCheckbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.todoItemCancel {
+    display: none;
+}
+.todoItem:hover span {
+    display: block;
+    cursor: pointer;
+}
