@@ -23,8 +23,7 @@ const HomePage = () => {
     const markTodoItemCompleted = (id) => {
         const newTodos = [...todos];
         newTodos[id].completed = !newTodos[id].completed;
-        setTodos(newTodos);
-        
+        setTodos(newTodos);   
     }
 
     const removeTodoItem = (id) => {
