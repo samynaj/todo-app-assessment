@@ -85,7 +85,7 @@ const HomePage = () => {
                 </div>
         
                 <div className={`bottomTodoActions ${dark? 'bottomTodoActionsDark': 'bottomTodoActionsLight'}`}>
-                    <span className="todoItemsLeft">5 Items left</span>
+                    <span className="todoItemsLeft">{filterTodos.length} Item{filterTodos.length > 1? 's' : ''} left</span>
                     <span className="todoItemsFilterOptions">
                         <span onClick={filterByAll} className={`allItems ${active === 'ALL'? 'active' : ''}`}>All</span>
                         <span onClick={filterByActive} className={`activeItems ${active === 'ACTIVE'? 'active' : ''}`}>Active</span>
