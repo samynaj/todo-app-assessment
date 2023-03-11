@@ -20,11 +20,13 @@
     background-image: url('../../../public/assets/bg-desktop-light.jpg');
     object-fit: cover;
     background-repeat: no-repeat;
+    width: 100%;
 }
 .topDark {
     background-image: url('../../../public/assets/bg-desktop-dark.jpg');
     object-fit: cover;
     background-repeat: no-repeat;
+    width: 100%;
 }
 .topContainer {
     width: 500px;
