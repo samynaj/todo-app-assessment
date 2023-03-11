@@ -18,11 +18,13 @@
 }
 .topLight {
     background-image: url('../../../public/assets/bg-desktop-light.jpg');
-    object-fit: contain;
+    object-fit: cover;
+    background-repeat: no-repeat;
 }
 .topDark {
     background-image: url('../../../public/assets/bg-desktop-dark.jpg');
-    object-fit: contain;
+    object-fit: cover;
+    background-repeat: no-repeat;
 }
 .topContainer {
     width: 500px;
